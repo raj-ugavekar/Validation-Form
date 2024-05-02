@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 25px 0;
+  display: flex;
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #225ed4;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.container .title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0;
+  padding-bottom: 25px;
+  border-bottom: 5px solid #225ed4;
+}
+
+.container form {
+  margin-top: 15px;
+  transition: all 0.3 ease;
+  height: 75vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+form::-webkit-scrollbar {
+  display: none;
+}
+
+form {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+form .input-box input,
+select {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+  border-bottom-width: 2px;
+}
+
+form .box-column {
+  display: flex;
+  column-gap: 160px;
+}
+
+form :where(.breed input, .gender label, .brand input, .brand label) {
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+form .button {
+  height: 45px;
+  margin: 20px 0;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background-color: #225ed4;
+}
+
+form .button:hover {
+  background-color: #184ab6;
+}
+
+/*#184ab6 ;*/
+
+form .button:active {
+  background-color: #2d6ef8;
+}
+
+#color,
+#myfile,
+#que,
+#pets {
+  height: 40px;
+}
+
+#color {
+  width: 120px;
+}
+
+#pets {
+  width: 120px;
+}
+
+.details,
+h3 {
+  position: relative;
+  padding-left: 10px;
+}
+
+.details::before,
+h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  height: 20px;
+  width: 5px;
+  background-color: #225ed4;
+}
+
+.user-details .input-box input:focus {
+  border-color: #225ed4;
+}
+
+#toastbox {
+  bottom: 30px;
+  right: inherit;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.toast {
+  width: 100%;
+  height: 50px;
+  font-weight: 500;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  display: block;
+}
+
+.toast .active {
+  display: block;
+}
+
+.toast i {
+  margin: 0 20px;
+  font-size: 35px;
+  color: green;
+}
+
+.toast::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: green;
+  animation: anim 6s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  form .column {
+    flex-wrap: wrap;
+  }
+
+  form .box-column {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <script type="text/javascript" src="script.js" defer></script>
+	  <link rel="stylesheet" href="style.css" >
+    <script src="https://kit.fontawesome.com/572467a88c.js" crossorigin="anonymous"></script>
+  </head>
+  <body >
+    <div class="container">
+      <div id="toastBox">
+      </div>
+      <div class="title">DOG BREEDS & FOODS SURVEY FORM</div>
+      <form  onreset="reset()" onsubmit= "validate()" true ?? method="post" >
+
+        <di class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" id="fname" name="fname" autofocus placeholder="Enter your First name here" >
+          </div>  
+          
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" id="lname" name="lname" placeholder="Enter your Last name here">
+          </div>
+        
+
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" id="cadd" name="cname" placeholder="Enter your address here">
+          </div>
+
+          <div class="column">
+            <div class="input-box">
+              <span class="details">Email</sp>
+              <input type="email" id="email" placeholder="Enter your Email-id here">
+            </div>
+  
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input type="password" id="password" name="pwd" autocomplete placeholder="Enter your password here">
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="input-box">
+              <span class="details">Date of Birth</span>
+              <input type="date" id="dob">
+            </div>
+
+            <div class="input-box">
+              <span class="details">Choose your State</sp>
+              <select id="states">
+                <option> </option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Goa" >Goa</option>
+                <option value="Karnataka">Karnataka</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Shop Name</span>
+            <input type="text" id="cname" name="cname" value="PET NATION (The Pet Shop)" disabled size="40">
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Shop Address</span>
+            <input type="text" id="cname" name="cname" value="Shop number 7 Baman waddo Vailankani Appartment Siolim ,Bardez, Goa, Goa 403517" readonly size="40"><br><br>
+          </div>
+
+          <div class="box-column">
+            <div class="breed-box">
+              <h3>Dog breed</h3>
+                <div class="breed-option">
+                  <div class="breed">
+                    <input type="radio" id="lab" name="breed" value="Labrodors" />
+                    <label for="lab">Labrodors</label>
+                  </div>
+
+                  <div class="breed">
+                    <input type="radio" id="Ger" name="breed" value="German" />
+                    <label for="Ger">German</label>
+                  </div>
+
+                  <div class="breed">
+                    <input type="radio" id="Ret" name="breed" value="Golden Retrievers" >
+                    <label for="Ret">Golden Retrievers</label>
+                  </div>
+
+                  <div class="breed">
+                    <input type="radio" id="Hus" name="breed" value="Husky" />
+                    <label for="Hus">Husky</label>
+                  </div>
+                </div>
+            </div>
+
+            <div class="brand-box">
+              <h3>Dog Food Brand Preferred</h3>
+              <div class="brand-option">
+                <div class="brand">
+                  <input type="checkbox" id="s" name="food" value="SuperCoat" />
+                  <label for="s">SuperCoat</label>
+                </div>
+
+                <div class="brand">
+                  <input type="checkbox" id="p" name="food" value="PurePet" />
+                  <label for="p">PurePet</label>
+                </div>
+
+                <div class="brand">
+                  <input type="checkbox" id="pe" name="food" value="Pedigree" />
+                  <label for="pe">Pedigree</label>
+                </div>
+
+                <div class="brand">
+                  <input type="checkbox" id="f" name="food" value="Farmini" />
+                  <label for="f">Farmini</label>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--
+          <div class="column">
+            <div class="input-box">
+              <span class="details">Enter your fav dog Color</span>
+              <input  type="color" id="color">
+            </div>
+
+            <div class="input-box">
+              <span class="details">Select your dog images file (if want)</span>
+              <input  type="file" id="myfile" name="myfile">
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="input-box">
+              <span class="details">Enter many pets do you have</span>
+              <input type="number" id="pets" name="pets" min="1" max="8" value="5">
+            </div>
+
+            <div class="input-box">
+              <span class="details">Rate our servey questions</span>
+              <input type="range" id="que" name="que" min="10" max="35" step="5">
+            </div>
+          </div>
+-->
+          <div class="column">
+          <input class="button" type="Reset">
+          <input class="button" type="Submit" value="Submit">
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
